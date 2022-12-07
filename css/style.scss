@@ -1,0 +1,39 @@
+
+// variables
+$comman-color:#25a2c3;
+$comman-bgcolor:#f6755e;
+
+// Mixins
+@mixin inner_box{
+    max-width:1200px;
+    padding:0 20px;
+    margin: 0 auto;
+
+    @media only screen and(max-width:1200px){
+        max-width:100%;
+        padding:0 20px;
+        margin: 0 auto;
+    }
+}
+
+@mixin flex_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// include
+
+@import"header";
+@import"section-1";
+@import"section-2";
+@import"section-3";
+@import"footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;;
+}

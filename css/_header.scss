@@ -1,0 +1,150 @@
+header{
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position:top;
+    height:400px;
+
+    .inner{
+        @include inner_box;
+        padding: 0;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color:#fff;
+        padding:10px;
+    }
+
+    .icon a{
+        color:#dee1e3;
+        font-size: 20px;
+    }
+    
+
+    .logo{
+        color:$comman-bgcolor;
+        margin-left:40px;
+       
+    }
+
+    .logo h3{
+        font-family: 'Great Vibes', cursive;
+        font-weight:900;
+        font-size: 30px;
+    }
+
+    .log-in button{
+        width: 100px;
+        height:35px;
+        background-color: transparent;
+        color: darkgray;
+        border: 1px solid darkgray;
+        cursor: pointer;
+    }
+
+    .header-headings{
+        width:40%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top:100px;
+
+        h1{
+            color:$comman-color;
+            font-weight:900;
+        }
+
+        p{
+            font-weight: 100;
+            color:grey;
+            margin-top: 20px;
+            line-height: 25px;
+        }
+
+        button{
+            background-color: $comman-bgcolor;
+            width: 120px;
+            height: 30px;
+            border: 0;
+            color:#fff;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and(max-width:1200px){
+        background-image: url("../img/banner.jpg");
+        background-size: cover;
+        background-position:top;
+        height:270px;
+
+        .inner{
+            @include inner_box;
+            padding: 0;
+        }
+    
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color:#fff;
+            padding:10px;
+        }
+    
+        .icon a{
+            color:#dee1e3;
+            font-size: 20px;
+        }
+        
+    
+        .logo{
+            color:$comman-bgcolor;
+            margin-left:40px;
+            
+        }
+    
+        .log-in button{
+            width:70px;
+            height:25px;
+            background-color: transparent;
+            color: darkgray;
+            border: 1px solid darkgray;
+            cursor: pointer;
+        }
+    
+        .header-headings{
+            width:100%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top:75px;
+    
+            h1{
+                color:$comman-color;
+                font-weight:900;
+                font-size: 20px;
+               
+            }
+    
+            p{
+                font-weight: 100;
+                color:grey;
+                margin-top:10px;
+                line-height:15px;
+                font-size: 10px;
+            }
+    
+            button{
+                background-color: $comman-bgcolor;
+                width: 100px;
+                height: 30px;
+                border: 0;
+                color:#fff;
+                margin-top:15px;
+                cursor: pointer;
+                font-size: 11px;
+            }
+        }
+
+    }
+}
